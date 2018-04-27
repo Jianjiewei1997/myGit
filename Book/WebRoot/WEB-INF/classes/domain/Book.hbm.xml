@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="domain.Book" table="book">
+        <id name="bid">
+            <column name="BID" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="bname">
+            <column name="BNAME"/>
+        </property>
+        <property name="bauther">
+            <column name="BAUTHER"/>
+        </property>
+        <property name="btype">
+            <column name="BTYPE"/>
+        </property>
+        <property name="bprice">
+            <column name="BPRICE"/>
+        </property>
+        <property name="bamount">
+            <column name="BAMOUNT"/>
+        </property>
+        <property name="bpubdate">
+            <column name="BPUBDATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

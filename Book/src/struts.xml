@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="book" extends="struts-default" namespace="/">
+		
+		<action name="addBook" class="bookAction" method="save">
+			<result name="success">Success.jsp</result>
+		</action>
+		
+		<action name="show" class="action.BookAction" method="list">
+            <result name="success">Book.jsp</result>
+        </action>
+        
+        <action name="BookUpdate" class="action.BookAction" method="bookUpdate">
+            <result name="success">Success.jsp</result>
+        </action>
+        
+        <action name="findByName" class="action.BookAction" method="findByName">
+            <result name="success">findByName.jsp</result>
+        </action>
+       
+       <action name="findByPrice" class="action.BookAction" method="findByPrice">
+            <result name="success">findByPrice.jsp</result>
+        </action>
+	</package>
+
+</struts>    
